@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class JavaExample1{
  public static void main(String[]args){
-  int num1=10,num2=20,num3=7;
+  int num1=15,num2=50,num3=9;
   if(num1>=num2&&num1>=num2)
      System.out.println(num1+"is the largest Number");
   else if(num2>=num1&&num2>+num3)
