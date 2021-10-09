@@ -1,0 +1,44 @@
+
+package students;
+
+import java.util.Scanner;
+
+public class Students {
+    Scanner sc=new Scanner(System.in);
+    int RegNo,Total=0,subjects;
+    String name;
+    int marks[];
+    Students()
+    {
+        System.out.print("Enter Registration No.:");
+        RegNo=sc.nextInt();
+        System.out.print("Enter Student Name:");
+        name=sc.next();;
+        getDisMarks();
+    }
+    public void getDisMarks()
+    {
+        marks=new int[3];
+        System.out.print("Enter marks of physics:");
+        marks[0]=sc.nextInt();
+        System.out.print("Enter marks of chemistry:");
+        marks[1]=sc.nextInt();
+        System.out.print("Enter marks of maths:");
+        marks[2]=sc.nextInt();
+        for(int i=0;i<3;i++)
+        {
+            Total+=marks[i];
+        }
+        System.out.println("Total Marks of student"+name+":"+Total);
+    }
+}
+class StudentDemo
+{
+    public static void main(String args[])
+    {
+        Students s[]=new Students[5];
+        for(int i=0;i<5;i++)
+            s[i]=new Students();
+    }
+}
+ 
